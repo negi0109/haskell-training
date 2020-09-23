@@ -28,5 +28,8 @@ addVector a b = (fst a + fst b, snd a + snd b)
 addVector' :: (Num a) => (a, a) -> (a, a) -> (a, a)
 addVector' (x1,y1) (x2,y2) = (x1 + x2, y1 + y2)
 
+first :: (a,b,c) -> a
+first (x, _, _) = x
+
 main :: IO ()
 main = print(fac2 3)
