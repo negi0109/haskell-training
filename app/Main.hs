@@ -22,5 +22,11 @@ evenNumbers' = [x|x<-[2,4..]]
 addThree :: Int -> Int -> Int -> Int
 addThree x y z = x + y + z
 
+addVector :: (Num a) => (a, a) -> (a, a) -> (a, a)
+addVector a b = (fst a + fst b, snd a + snd b)
+
+addVector' :: (Num a) => (a, a) -> (a, a) -> (a, a)
+addVector' (x1,y1) (x2,y2) = (x1 + x2, y1 + y2)
+
 main :: IO ()
 main = print(fac2 3)
