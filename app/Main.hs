@@ -16,5 +16,11 @@ add' = (:)
 -- [1,2,3]!!2 => 3
 get' = (!!)
 
+evenNumbers = [x*2|x<-[1..]]
+evenNumbers' = [x|x<-[2,4..]]
+
+addThree :: Int -> Int -> Int -> Int
+addThree x y z = x + y + z
+
 main :: IO ()
 main = print(fac2 3)
